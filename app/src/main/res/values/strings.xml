@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MortgageLoanEstimator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="propertytax">Tax Rate</string>
+    <string name="reqdHomeValueText"></string>
+    <string name="reqddownValueText"></string>
+    <string name="interestRate">Interest Rate</string>
+    <string name="reqdaprValueText"></string>
+    <string name="reqdtermsValueText"></string>
+    <string name="homevalue">Home Value</string>
+    <string name="termsSpinner"></string>
+    <string name="apr">APR</string>
+    <string name="terms">Terms</string>
+    <string name="downpayment">Down Payment</string>
+    <string name="totaltaxpaid">Total Tax Paid</string>
+    <string name="totalinterestpaid">Total Interest Paid</string>
+    <string name="monthlypayment">Monthly Payment</string>
+    <string name="payoffdate">Pay off date</string>
+
+    <string-array name="loanTenure">
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+</resources>

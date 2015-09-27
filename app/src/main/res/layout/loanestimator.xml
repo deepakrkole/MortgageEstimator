@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_vertical"
+    android:contentDescription="Enter Home Loan Amount">
+
+    <TextView
+        android:id="@+id/txthomevaluelabel"
+        android:text="@string/homevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:width="135dp"
+        />
+
+    <EditText
+        android:id="@+id/txthomevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="25dp"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:editable="true"
+        android:numeric="decimal" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="40dp"
+        android:text="$"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txthomevalue"/>
+
+    <TextView
+        android:id="@+id/reqdHomeValueText"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:editable="false"
+        android:text=""
+        android:textColor="#b80000"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/txthomevalue"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/txtdownpaymentlabel"
+        android:text="@string/downpayment"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/txthomevaluelabel"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:width="135dp"
+        android:editable="false"
+        />
+
+    <EditText
+        android:id="@+id/txtdownpayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/reqdHomeValueText"
+        android:textSize="15dp"
+        android:width="175dp"
+        android:inputType="numberDecimal"
+        android:editable="true"
+        android:numeric="decimal" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="97dp"
+        android:text="$"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txtdownpayment"/>
+
+    <TextView
+        android:id="@+id/reqddownValueText"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:editable="false"
+        android:text=""
+        android:textColor="#b80000"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/txtdownpayment"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/txtaprlabel"
+        android:text="@string/apr"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdownpaymentlabel"
+        android:textSize="15dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:width="135dp"
+        android:editable="false"
+        />
+
+    <EditText
+        android:id="@+id/txtapr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/reqddownValueText"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="155dp"
+        android:text="%"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txtapr"/>
+
+    <TextView
+        android:id="@+id/reqdaprValueText"
+        android:layout_width="175dp"
+        android:layout_height="20dp"
+        android:editable="false"
+        android:text=""
+        android:textColor="#b80000"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/txtapr"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:id="@+id/txttermslabel"
+        android:text="@string/terms"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtaprlabel"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:width="135dp"
+        android:editable="false"
+        android:layout_alignLeft="@+id/txtaprlabel"
+        />
+
+    <TextView
+        android:id="@+id/txtpropertytaxlabel"
+        android:text="@string/propertytax"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttermslabel"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:width="135dp"
+        android:editable="false"
+        android:layout_alignLeft="@+id/txtaprlabel"
+        />
+
+    //spinner
+    <Spinner
+        android:id="@+id/spTerms"
+        android:entries="@array/loanTenure"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:width="175dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/marginRight"
+        android:textSize="15dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/reqdaprValueText"
+        android:inputType="number"
+        android:layout_centerVertical="true"
+        android:editable="true"
+        />
+
+    <EditText
+        android:id="@+id/propertytaxrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/spTerms"
+        android:inputType="number"
+        android:layout_centerVertical="true"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="275dp"
+        android:text="%"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/propertytaxrate"/>
+
+    <TextView
+        android:id="@+id/reqdpropertyTaxValueText"
+        android:layout_width="155dp"
+        android:layout_height="20dp"
+        android:editable="false"
+        android:text=""
+        android:textColor="#b80000"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/propertytaxrate"
+        android:layout_marginLeft="160dp"
+        />
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_marginTop="215dp"
+        android:text="Yrs"
+        android:textStyle="bold"
+        android:layout_marginRight="40dp"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/spTerms"/>
+
+    <TextView
+        android:id="@+id/reqdtermsValueText"
+        android:layout_width="155dp"
+        android:layout_height="20dp"
+        android:editable="false"
+        android:text=""
+        android:textColor="#b80000"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/spTerms"
+        android:layout_marginLeft="160dp"
+        />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/btncalc"
+        android:layout_alignTop="@+id/btnreset"
+        android:layout_alignRight="@+id/txttermslabel"
+        android:layout_alignEnd="@+id/txttermslabel" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/btnreset"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/reqdtermsValueText"
+        android:layout_alignRight="@+id/reqdaprValueText"
+        android:layout_alignEnd="@+id/reqdaprValueText" />
+
+</RelativeLayout>

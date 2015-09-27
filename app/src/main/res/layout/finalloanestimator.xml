@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txttotaltaxpaidlabel"
+        android:text="@string/totaltaxpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:editable="false"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:width="135dp"
+        />
+
+    <EditText
+        android:id="@+id/txttotaltaxpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="25dp"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:numeric="decimal"
+        />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="38dp"
+        android:text="$"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txttotaltaxpaid"/>
+
+    <TextView
+        android:id="@+id/totalinterestpaidlabel"
+        android:text="@string/totalinterestpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:editable="false"
+        android:layout_below="@id/txttotaltaxpaidlabel"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:width="135dp"
+        />
+
+    <EditText
+        android:id="@+id/txttotalinterestpaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/txttotaltaxpaid"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:numeric="decimal"
+        />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="85dp"
+        android:text="$"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txttotalinterestpaid"/>
+
+    <TextView
+        android:id="@+id/monthlypaymentlabel"
+        android:text="@string/monthlypayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/totalinterestpaidlabel"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:editable="false"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:width="135dp"
+        />
+
+    <EditText
+        android:id="@+id/txtmonthlypayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/txttotalinterestpaid"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:numeric="decimal"
+        />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_marginTop="135dp"
+        android:text="$"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/txtmonthlypayment"/>
+
+    <TextView
+        android:id="@+id/payoffdatelabel"
+        android:text="@string/payoffdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/monthlypaymentlabel"
+        android:textStyle="bold"
+        android:editable="false"
+        android:textSize="15dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:width="135dp"
+        />
+
+    <EditText
+        android:id="@+id/txtpayoffdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtmonthlypayment"
+        android:width="175dp"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:editable="false"
+        android:cursorVisible="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:numeric="decimal"
+        />
+
+</RelativeLayout>
